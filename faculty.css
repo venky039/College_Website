@@ -1,0 +1,60 @@
+body{
+   background-color:whitesmoke;
+}
+#para1{
+   position: relative;
+   left:90%;
+   
+}
+/**first department. Faculty grouped by departments***/
+.group{
+   margin-top: 10px;
+   width:100%;
+   height: 140px;
+   border: 0.5px solid black;
+}
+
+#film_div p{
+   width:45%;
+   height:90%;
+}
+
+.group:hover{
+   background-color: lightgrey;
+}
+
+
+/***Faculty thubnails***/
+
+.group_hidden {
+   width:100%;
+   height:400px;
+   background-color: gainsboro;
+   padding: 5px;
+}
+
+.group_content{
+   width:20%;
+   height:230px;
+   border:2px solid lightseagreen;
+   text-align: center;
+   justify-content: center;
+   float: left;
+   margin: 10px;
+   
+}
+.group_content:hover{
+   background-color: lightgrey;
+}
+
+.img1{
+   height:70%;
+   width:60%;
+   border-radius: 45%;
+   box-sizing:border-box;
+}
+
+.link_hidden{
+   margin-top: 30px;
+   display: none;
+}

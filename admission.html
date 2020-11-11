@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="stylesheet" type='text/css' href='admission.css'>
+
+   </head>
+   <body>
+      <h3>Registeration Form</h3>
+      <div id='form_div'>
+         <h3>Enter Details</h3>
+         <label for="name">Name:</label>
+         <input type="text" placeholder="First Name" id='name1' required>&nbsp
+         <input type="text" placeholder="Last Name" id='lname' required><br><br>
+         <label for="email">Email:</label>
+         <input type="email" placeholder="Email ID" id='email' required><br><br>
+         <label >Gender</label>
+         <input type="checkbox" id='male' value='Male'>
+         <label for="male">Male</label>
+         <input type='checkbox' id='female' value='Female'>
+         <label for="female">Female</label><br><br>
+         
+         <label for='dob'>Date of Birth</label>
+         <input type="date" id='dob' required><br><br>
+         <label for='country'>Country</label>&nbsp
+         <input type='text' id='country' name='country' required><br><br>
+         <label for=''>Address</label>
+         <input type="text" maxlength="30" placeholder="Line1" required><br>
+         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type='text' maxlength="30" placeholder="Line2"><br><br>
+
+         <label for='phone'>Mobile</label>
+         <input type="number" maxlength="10" required id='phone'><br><br>
+
+         <label for='course'>Select Course</label>
+         <input type='text' list="dl1" id='course'>
+         <datalist id='dl1'>
+            <option value='M Arch'>M Arch</option>
+            <option value='Film Making'>Filmmaking</option>
+            <option value='Humanities'>Humanities</option>
+            <option value='Graphic Design'>Graphic Design</option>
+         </datalist><br>
+         <br>
+         <input type="button" id='btn1' value='Submit'> 
+      </div>
+   </body>
+   <script type='text/javascript'>
+      var txt1;
+      var btn1=document.getElementById('btn1');
+         btn1.addEventListener('click',function(){
+            txt1=document.getElementById('name1').value;
+            window.sessionStorage.setItem("firstname",txt1);
+            
+            window.location.href='home.html';
+
+         })
+      </script>
+
+</html>
+

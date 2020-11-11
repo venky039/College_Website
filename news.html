@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>      
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" text='text/css' href='news.css'/>
+</head>
+<body>
+   <div id='header_div'>
+      <p id='para1'></p>
+      <span>October 2020</span><hr>
+      <div id='jumbotron_div'>
+         <img id='uni_img' src='res/university.png'>
+         <p>RockFord University<br>
+            <span>NEWSLETTER</span></p> 
+      </div>
+   </div>
+   <div id='container'>
+      <div id='div1'>
+         <h3>In The News</h3><hr>
+         <p class='text1'>Rockford University ranked in Top 50 world universities by QX Rankings for graduate employability</p>
+         <ul>
+            <li><div><img src='res/thumbnail1.jpg'>
+               <a href='https://www.youtube.com/watch?v=Sp7w5wdv9_Y' target="_blank"><p>Why project management matters
+               </p></a></div>
+            </li><br>
+            <li><div><img src='res/thumbnail2.jpg'><a href='https://www.youtube.com/watch?v=EGLFsvua6BA&list=PL0wJlqF6AzZbJOIeJKAve2USL3Mn1aqwe' target='_blank'><p>RockFord to set up online course for Product Management</p></a></div>
+            </li><br>
+            <li><div><img src='res/thummnail3.jpg'><a href='https://www.youtube.com/watch?v=-8JCSCf_wA4' target="_blank"><p>Rockford Leadership training 0ct-2020</p></a></div>
+            </li><br>
+            <li><div><img src='res/thumbnail4.png'><p>RockFord Filmaking trainig videos</p></div>
+            </li>
+         </ul>
+      </div>
+      <div id='div2'>
+         <div>
+            <img src='res/alumni.jpg'>
+            <p><h4>Alumni of the month</h4>
+               Raj Shah graduated from Communication Science in 2005, He was an active student, being a writer and eventually the editor in chief of our very own Medium Magazine during 2003</p>
+         </div><br><br><hr>
+         <div>
+            <img src='res/reading.jpg'>
+            <p>
+               <a href='https://medium.com/free-code-camp/how-i-went-from-newbie-to-software-engineer-in-9-months-while-working-full-time-460bd8485847' target="_blank">How I went from newbie to Software Engineer in 9 months while working full time</a>
+            </p>
+         </div>
+      </div>
+      <div id='div3'>
+         <h3>Upcoming Events</h3>
+         <ul>
+            <li>Nov 1: Soccer Tournament</li>
+            <li>Nov 3: Phoenix Act</li>
+            <li>Nov 5: Art Show</li><br>
+            <li>Nov 7: Sculpture Class</li>
+            <li>Nov 10: Filmaking Seminar Talk</li>
+            <li>Nov 13: Health and Heal</li><br>
+            <li>Nov 17:Videography Seminar</li>
+            <li>Nov 23:Leadership Talk by Mr.steve</li>
+            <li>Nov 26:Alumni Meet</li>
+         </ul>
+      </div>
+   </div>
+</body>
+<script>
+   window.onload=function(){
+   if(window.sessionStorage.getItem("firstname")!=undefined){
+      document.getElementById('para1').innerHTML="Welcome "+window.sessionStorage.getItem("firstname");
+
+   }
+};
+</script>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="cache-control" content="no-cache" />
+      <meta http-equiv="Pragma" content="no-cache" /> 
+      <link rel="stylesheet" text='text/css' href='home.css'/>
+
+   </head>
+   <body>
+      <p id='para1'></p>
+      <span id='span_title'><h3>Education for Everyone Everywhere</h3></span>
+      <div id='nav_div'>
+         <a id='home_link' href="#" target="_self">Home</a>
+         <a id='news_link' href="news.html" target="_self">Newletter</a> 
+         <a id='program_link' href="program.html" target='_self'>Programs</a> 
+
+         <a id='methodology_link' href="#" target='_self'>Methodology</a>
+         <a id='faculty_link'href="faculty.html" target='_self'>Faculty</a> 
+
+         <a id='admission_link' href="admission.html" target='_self'>Admission</a> 
+         <a id='source_link' href="#" target='_self'>e-Sources</a> 
+         <a id='contact_link' href="contact.html" target='_self'>Contact Us</a>       
+      </div>      
+      <div id='container_div'>
+         <div id='div1'>
+            <div id='div11'>
+               <div id='imgdiv1'>
+                  <img id='img1' src='res/filmaking.jpg'/>
+               </div>
+               <div id='paradiv1'>
+                  <h4>01/01/2021 - Launching the MFA in Filmaking</h4>
+                  <p>Announcing a unique, 2- year online-brief residency MFA, BFA program and Diploma program in Filmaking led by award winning independent producer, director, screenwriter and educator Wayne Crawford</p>
+               </div>
+            </div>
+         </div>
+         <div id='div2'>
+            <h3>Welcome!</h3>
+            <span>
+               <p style="color:darkblue ;">Are you looking for a degree that is available fully online that is going to make an impact in your life and in your job?<br><br>
+               Are you looking for something different, modern, truly international yet adaoted to you and your culture?</p>
+            </span>
+               <p>Horizons university has the solution for you.<br><br>
+               Our mission is to provide the educational experience that fits our students need in any part of the world and contribute to their personal and professional fulfillment.<br>We provide programs that are flexible in time, that takes into account the person's experience and also affordable. We are specialized in distant education but we offer classrooms programs as well.
+               </p>
+               <div id='files_div'>
+                  <img src='res/files.jpg'>
+                  <p>Click here for Detailed Course Information</p>
+               </div>
+         </div>
+         <div id='list_div'>
+            <div id='div3'>
+               <h3>Campus Study</h3>
+               <img src='res/campus.jpg' id='img3' class='img1'>
+               <p>Our on-campus programs will allow you to interact with faculty and other students during residency periods and complete work online. It is another flexble solution that will certainly enhance your professional life.</p>
+            </div>
+            <div id='div4'>
+               
+               <img src='res/onlinestudy.jpg' class='img2'>
+               
+               <p><b>Online Study</b><br>Our online programs allow you to work at your own pace while you keep your job and your activities. You can pursue a quality education without leaving home. This option is also less costly and available in any country.</p>
+           
+            </div>
+            <div id='div5'>
+               <img src='res/secondlife.png' class='img3'>
+               <h4>Experience the new Virtual Campus</h4>
+               <div>
+                  Horizons University is one of the few universities in the world to offer entire course modules in virtual campus,along with live presentations from keynote speakers,facilitating learning.
+               </div>
+            </div>
+         </div>
+         <div id='login_div'>
+            <h4>Online Learning Portal</h4>
+            <form>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label id='l1' for='email'>User</label>
+               <input type='text' id='email'><br><br>
+               <label id='l2' for='pwd'>Password</label>&nbsp;
+               <input type='password' id='pwd'><br><br>
+               <label>Forgot your Details</label>
+               <input type='button' id='btn1' value=' Login '>
+            </form>
+         </div>
+      </div>
+   </body>
+   <script>
+      window.onload=function(){
+      if(window.sessionStorage.getItem("firstname")!=undefined){
+         document.getElementById('para1').innerHTML="Welcome "+window.sessionStorage.getItem("firstname");
+  
+      }
+
+         
+   };
+   </script>
+</html>
+
+<!--
+
+-->
